@@ -15,7 +15,7 @@ type Rectangle struct {
 }
 
 func (c *Circle) Area() float64 {
-	radiusQuadratic := float64(c.Radius * 2)
+	radiusQuadratic := float64(c.Radius * c.Radius)
 	return float64(math.Pi * radiusQuadratic)
 }
 func (r *Rectangle) Area() float64 {
